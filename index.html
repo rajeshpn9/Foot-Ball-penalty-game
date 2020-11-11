@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Ball Penalty Round</title>
+    <!-- Including the style sheet -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="profile-icon" src="Assets\Argentina.png" alt="Argentina" height="150px" width="150px"/>
+               <span class='name' id="team-1-name"></span>
+                <div class="row round-goals" id="team-1-round-goals">
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score"></span>
+                    <span>-</span>
+                    <span id="team-2-score"></span>
+                </div>
+            </div>
+            <div class="col">
+                <img class="profile-icon" src="Assets\Portugal.png" alt="Portugal" height="150px" width="150px"/>
+                <span class="name" id="team-2-name"></span>
+                <div class="row round-goals" id="team-2-round-goals">
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                    <span class="col" id = "circle">-</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button id="strike-button" onclick="handleStrikeButtonClick()"></button>
+        </div>
+        <div class="row" id="result" hidden></div>
+    </div>
+        <!-- Loading javascript libraries -->
+        <script src="./manip.js"></script>
+</body>
+</html>
